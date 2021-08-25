@@ -1,0 +1,65 @@
+@charset "utf-8";
+body {
+	margin: 0;
+  	padding: 0;
+    background: black;
+	overflow: hidden;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    letter-spacing: 7px;
+   }
+#hours{
+	position : absolute;
+	left: 25%;
+	top : 0;
+	transform: translateY(50%);
+}
+#minutes{position: absolute;
+	left : 50%;
+	top : 0;
+	transform: translateY(50%);}
+#seconds{ position: absolute;
+	left: 75%;
+	top : 0;
+	transform: translateY(50%);}
+.clock2{
+	color: white;
+	font-size: 1.5em;
+}
+#recthours{
+	position: absolute;
+	left : 25%;
+	width: 10px;
+	transition: transform 700ms ease-in-out;
+}
+#rectminutes{
+	position: absolute;
+	left : 50%;
+	width: 10px;
+	transition: transform 700ms ease-in-out;
+
+}
+#rectseconds{
+	position: absolute;
+	left : 75%;
+	width: 10px;
+	transition: transform 700ms ease-out;
+}
+#box{
+	height: 20px;
+	width: 70vw;
+	border: solid white 3px;
+	position: absolute;
+	top: 50vh;
+	left: 50%;
+	transform: translateX(-50%);
+	;
+}
